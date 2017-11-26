@@ -1,2 +1,6 @@
+README.md
+.git
+
 target/
 Dockerfile
+deploy/

@@ -1,0 +1,21 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: it-works-deployment
+  labels:
+    app: it-works
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: it-works
+  template:
+    metadata:
+      labels:
+        app: it-works
+    spec:
+      containers:
+        - name: it-works
+          image: quay.io/premist/it-works
+          ports:
+            - containerPort: 8080

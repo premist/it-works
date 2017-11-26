@@ -1,0 +1,7 @@
+[package]
+name = "it-works"
+version = "0.1.0"
+authors = ["Minku Lee <premist@me.com>"]
+
+[dependencies]
+nickel = "0.10.*"

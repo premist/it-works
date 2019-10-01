@@ -7,7 +7,7 @@ fn main() {
     let mut server = Nickel::new();
 
     server.get("/", middleware! {
-      (StatusCode::Ok, "<h1>It works!</h1>")
+      (StatusCode::Ok, "<h1>It works!!</h1>")
     });
 
     server.get("/healthz", middleware! {
